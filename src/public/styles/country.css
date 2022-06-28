@@ -1,0 +1,265 @@
+.country-wrapper {
+  flex: 1 0 18%;
+  margin-left: 60px;
+  margin-bottom: 60px;
+  max-width: 325px;
+}
+
+.country-image {
+  height: 185px;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  object-fit: cover;
+}
+
+.information-wrapper {
+  padding: 15px;
+  padding-left: 20px;
+  padding-bottom: 45px;
+  background-color: #fff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-top: 0;
+  position: relative;
+  top: -6px;
+}
+
+#light .information-wrapper {
+  box-shadow: 0 5px 5px hsl(0, 0%, 96%);
+}
+
+#dark .information-wrapper {
+  background-color: hsl(209, 23%, 22%);
+}
+
+.name-wrapper {
+  margin-top: 10px;
+  margin-bottom: 17px;
+}
+
+.country-name {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+#dark .country-name {
+  color: #fff;
+}
+
+#dark .value {
+  color: #fff;
+}
+
+.population-wrapper {
+  margin-top: 10px;
+}
+
+.region-wrapper,
+.capital-wrapper {
+  margin-top: 7px;
+}
+
+.label {
+  color: #000;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+#dark .label {
+  color: #fff;
+}
+
+.button-wrapper {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  height: 35px;
+  background-color: #fff;
+  padding: 5px;
+  -webkit-box-shadow: 0 0 6px hsl(0, 0%, 52%);
+  box-shadow: 0 0 4px hsl(0, 0%, 74%);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+}
+
+#dark button {
+  background-color: hsl(209, 23%, 22%);
+  -webkit-box-shadow: 0 0 4px hsl(200, 15%, 8%);
+  box-shadow: 0 0 4px hsl(200, 15%, 8%);
+  color: #fff;
+}
+
+#dark main {
+  background-color: hsl(207, 26%, 17%);
+}
+
+main {
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 98%);
+}
+
+.back-icon {
+  width: 17px;
+  margin-right: 10px;
+}
+
+.single-country-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.single-country-flag {
+  width: 50%;
+}
+
+.single-country-flag img {
+  max-height: 475px;
+  width: 100%;
+}
+
+.single-country-info {
+  margin-left: 80px;
+  width: 40%;
+}
+
+.single-country-detail-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.single-country-title {
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+#dark .single-country-title {
+  color: #fff;
+}
+
+.single-country-row {
+  display: flex;
+  align-items: baseline;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.country-name-map {
+  margin-top: 10px;
+}
+
+.bottom-info {
+  width: 50%;
+}
+
+#dark .no-border {
+  color: #fff;
+}
+
+.title-border {
+  margin-bottom: 20px;
+}
+
+#dark .country-name-map {
+  color: #fff;
+}
+
+@media only screen and (max-width: 1300px) {
+  .country-wrapper {
+    flex: 1 0 25%;
+    margin: 20px;
+    max-width: none;
+  }
+
+  .country-wrapper:nth-child(4n + 1) {
+    margin-left: 20px;
+  }
+
+  .country-wrapper:nth-child(1n + 1) {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .country-wrapper {
+    flex: 1 0 45%;
+    margin: 20px;
+    max-width: none;
+  }
+  .country-wrapper:nth-child(2n + 1) {
+    margin-left: 0;
+  }
+
+  .bottom-info {
+    width: 100%;
+  }
+
+  .country-wrapper:nth-child(1n + 1) {
+    margin-right: 0;
+  }
+  .single-country-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button-wrapper {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+
+  .single-country-flag {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .single-country-info {
+    width: 100%;
+    margin-left: 0;
+  }
+  .single-country-detail-info {
+    flex-direction: column;
+  }
+
+  .bottom-info {
+    margin-top: 30px;
+  }
+
+  .border-countries {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .border-wrapper {
+    margin-left: 0 !important;
+  }
+
+  .map {
+    width: 100% !important;
+    height: 600px !important;
+  }
+}
+
+@media only screen and (max-width: 625px) {
+  .countries-wrapper {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .country-wrapper {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .country-image {
+    height: auto;
+  }
+}
